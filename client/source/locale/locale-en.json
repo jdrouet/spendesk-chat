@@ -19,7 +19,8 @@
       "button": "Register",
       "title": "Registration"
     },
-    "invalid-credentials": "Invalid credentials"
+    "invalid-credentials": "Invalid credentials",
+    "title": "Authentication"
   },
   "home": {
     "title": "Live your trip",
