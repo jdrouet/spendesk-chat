@@ -4,9 +4,9 @@
   "main": "server/server.js",
   "scripts": {
     "client:watch": "webpack-dev-server --config client/webpack.config.dev.js --hot",
+    "client:build": "webpack --config client/webpack.config.js",
     "start": "node .",
-    "pretest": "eslint .",
-    "posttest": "nsp check"
+    "postinstall": "npm run client:build"
   },
   "dependencies": {
     "babel-loader": "^6.2.5",

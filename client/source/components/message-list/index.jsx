@@ -1,6 +1,9 @@
 import React, {Component, PropTypes} from 'react'
 
+import {Card, CardText} from 'material-ui/Card';
 import {List, ListItem} from 'material-ui/List';
+import Divider from 'material-ui/Divider';
+import Subheader from 'material-ui/Subheader';
 import RaisedButton from 'material-ui/RaisedButton';
 import TextField from 'material-ui/TextField';
 import Translate from 'react-translate-component';
@@ -21,24 +24,32 @@ export default class MessageList extends Component {
 
   render() {
     return (
-      <div>
+      <Card>
         <List>
-          {this.props.messages.map(item => (
-            <ListItem
-              key={item.id}
-              primaryText={item.content}
-            />
-          ))}
+          <Subheader>{this.props.room.name}</Subheader>
+          <Divider />
+          <div style={{height: 400, overflowY: 'auto'}}>
+            {this.props.messages.map(item => (
+              <ListItem
+                key={item.id}
+                primaryText={item.content}
+                secondaryText={item.userId}
+              />
+            ))}
+          </div>
         </List>
-        <form onSubmit={this.onSubmit.bind(this)} noValidate>
-          <TextField
-            floatingLabelText={<Translate content="message.create.content" />}
-            fullWidth={true}
-            onChange={e => this.setState({content: e.target.value})}
-            value={this.state.content}
-          />
-        </form>
-      </div>
+        <Divider />
+        <CardText>
+          <form onSubmit={this.onSubmit.bind(this)} noValidate>
+            <TextField
+              floatingLabelText={<Translate content="message.create.content" />}
+              fullWidth={true}
+              onChange={e => this.setState({content: e.target.value})}
+              value={this.state.content}
+            />
+          </form>
+        </CardText>
+      </Card>
     );
   }
 }

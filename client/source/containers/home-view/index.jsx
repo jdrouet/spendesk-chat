@@ -69,7 +69,7 @@ class HomeView extends Component {
   }
 
   render() {
-    let scrollStyle = {height: '90vh'};
+    let scrollStyle = {height: '100vh'};
     let messages = [];
     if (this.state.room) {
       messages = _.filter(this.props.messages, {roomId: this.state.room.id});
@@ -77,7 +77,7 @@ class HomeView extends Component {
     return (
       <div className="container">
         <div className="row">
-          <div className="col-xs-4" style={scrollStyle}>
+          <div className="col-xs-3" style={scrollStyle}>
             <RoomList
               onCreate={this.onCreateRoom.bind(this)}
               onSelect={this.onSelectRoom.bind(this)}
@@ -85,11 +85,12 @@ class HomeView extends Component {
               selected={this.state.room}
             />
           </div>
-          <div className="col-xs-8" style={scrollStyle}>
+          <div className="col-xs-9" style={scrollStyle}>
             {this.state.room ? (
               <MessageList
                 messages={messages}
                 onCreate={this.onCreateMessage.bind(this)}
+                room={this.state.room}
               />
             ) : null}
           </div>
