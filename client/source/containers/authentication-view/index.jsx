@@ -26,6 +26,8 @@ class AuthenticationView extends Component {
   }
 
   onLogin() {
+    this.props.accountActions.login(this.state.credentials)
+      .then(() => this.props.routerActions.push('/'));
   }
 
   render() {
