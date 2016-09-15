@@ -1,5 +1,5 @@
-import * as types from '../constants/room';
-import _ from 'lodash';
+import * as types from '../constants/message';
+import _ from 'lodash'
 
 var initialState = [];
 

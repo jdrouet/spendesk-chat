@@ -8,21 +8,13 @@ export function find(filter) {
   }
 }
 
+export function onCreate(room) {
+  return {type: cst.CREATE, payload: room};
+}
+
 export function create(room) {
   return request('api/Rooms', {
     method: 'POST',
     body: JSON.stringify(room)
   })
-}
-
-export function listen() {
-  return (dispatch) => {
-    let source = new EventSource('api/Rooms/change-stream?_format=event-stream');
-    source.addEventListener('data', function(data) {
-      switch(data.type) {
-        case 'create':
-          return dispatch(() => ({type: cst.CREATE, payload: data.target}));
-      }
-    });
-  };
 }

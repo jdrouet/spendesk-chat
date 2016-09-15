@@ -76,5 +76,15 @@
       "arrival-date": "Arrival date",
       "arrival-time": "Arrival time"
     }
+  },
+  "room": {
+    "create": {
+      "name": "A new room name"
+    }
+  },
+  "message": {
+    "create": {
+      "content": "Your message content"
+    }
   }
 }
