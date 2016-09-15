@@ -1,0 +1,16 @@
+html, body {
+  font-family: 'Open Sans', sans-serif;
+  color: #34495e;
+  background-color: #ecf0f1;
+  padding: 0;
+  margin: 0;
+}
+
+.text-dark-grey {
+  color: #34495e;
+}
+
+#content {
+  padding: 0;
+}
+

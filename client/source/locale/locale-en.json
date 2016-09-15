@@ -1,0 +1,80 @@
+{
+  "account": {
+    "cancel": "Cancel",
+    "change-password": "Change password",
+    "email": "Email address",
+    "email-uniqueness": "This email is already used",
+    "new-password": "New password",
+    "old-password": "Old password",
+    "password": "Password",
+    "log-out": "Log out"
+  },
+  "authentication": {
+    "authentication": "Authentication",
+    "login": {
+      "button": "Login",
+      "title": "Authentication"
+    },
+    "register": {
+      "button": "Register",
+      "title": "Registration"
+    },
+    "invalid-credentials": "Invalid credentials"
+  },
+  "home": {
+    "title": "Live your trip",
+    "subtitle": "Do you organize your trip by someone who really knows the places",
+    "discover": {
+      "title": "Explore the World",
+      "subtitle": "Discover somewhere new without preparing anything",
+      "portugal": "The colors of Portugal",
+      "china": "Chinas tops",
+      "colombia": "The Colombias beaches",
+      "footer": "Do it organized by someone who knows the places"
+    },
+    "food": {
+      "title": "Discover the best food",
+      "subtitle": "There's only people who know that can recommend them"
+    },
+    "spot": {
+      "title": "Discover the best places",
+      "subtitle": "There's only people who know that can recommend them"
+    },
+    "travel-agency": {
+      "title": "Become yourself a travel agency",
+      "subtitle": "And suggest routes that are important to you"
+    },
+    "traveler": {
+      "title": "Enjoy the knowledge offered to you",
+      "subtitle": "Et découvrez des choses que vous ne vérez nulle part ailleur"
+    }
+  },
+  "subscribe": {
+    "destination": "Destination",
+    "email": "Mail address",
+    "title": "Subscription",
+    "subtitle": "Be one of the first to enjoy it",
+    "button": "Subscribe"
+  },
+  "search-bar": {
+    "location": "Where do you want to go ?",
+    "duration": "How many days ?",
+    "departure": "When ?"
+  },
+  "travel": {
+    "roadmap": {
+      "flight": "Flight",
+      "taxi": "Taxi",
+      "train": "Train",
+      "reastaurant": "Restaurant",
+      "restaurant": "Restaurant",
+      "hotel": "Hotel",
+      "departure": "Departure location",
+      "departure-date": "Departure date",
+      "departure-time": "Departure time",
+      "arrival": "Arrival location",
+      "arrival-date": "Arrival date",
+      "arrival-time": "Arrival time"
+    }
+  }
+}
